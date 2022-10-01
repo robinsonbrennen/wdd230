@@ -9,7 +9,7 @@ font-family: 'Roboto', sans-serif; - Headings/Footer
 */
 
 body {
-    background-color: #F0F0C9;
+    background-color: #f8f8f0;
     margin: 0 auto;
     width: 100%;
 }
@@ -27,6 +27,10 @@ header, footer {
 
 h1 {
     margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 nav {
@@ -60,5 +64,25 @@ nav ul li a {
 }
 
 .active {
-	color: white;
+	background-color: #082b8d;
+    border-radius: 10px;
+}
+
+main {
+    padding: 1.8em 1.8em 1.8em 1.8em;
+}
+
+main picture img {
+    width: 80%;
+    height: 80%;
+    max-width: 500px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fbfbfb;
 }
