@@ -14,10 +14,6 @@ body {
     width: 100%;
 }
 
-header {
-    font-size: 1.5rem;
-}
-
 header, footer {
     background-color: #001242;
     color: #F0F0C9;
@@ -25,12 +21,14 @@ header, footer {
     padding: 1em;
 }
 
-h1 {
-    margin: 0 auto;
+.logo {
+    width: 150px;
+    height: auto;
 }
 
-h2 {
-    font-size: 2rem;
+.headings {
+    display: flex;
+    flex-direction: column;
 }
 
 nav {
@@ -42,25 +40,32 @@ nav {
     font-family: 'Roboto', sans-serif;
 }
 
-nav div {
-	list-style-type: none;
-	overflow: hidden;
+.navigation {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.navigation li {
+    display: block;
     flex: 1 1 auto;
 }
 
-nav a {
+.navigation li:first-child {
     display: block;
-    color: #fbfbfb;
-    text-align: center;
-    padding: 1em;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    text-align: left;
     text-decoration: none;
 }
 
-nav ul li a {
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	font-size: 0.95rem;
+.navigation a:hover {
+    color: black;
+    background-color: #F0F0C9;
 }
 
 .active {
@@ -68,14 +73,12 @@ nav ul li a {
     border-radius: 10px;
 }
 
-main {
-    padding: 1.8em 1.8em 1.8em 1.8em;
+.responsive li {
+    display: block;
 }
 
-main picture img {
-    width: 80%;
-    height: 80%;
-    max-width: 500px;
+.responsive a.ham::before {
+	content: "❌ ";
 }
 
 footer {

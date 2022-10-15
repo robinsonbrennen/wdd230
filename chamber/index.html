@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Brennen Robinson">
-    <meta name="description" content="WDD 230 - This is the homepage for the chamber of commerce website assignment
-
+    <meta name="description" content="WDD 230 - This is the homepage for the chamber of commerce website assignment">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -19,25 +19,47 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <picture>
-                <img src="images/svcclogo.png" alt="Star Valley Chamber of Commerce Img">
-            </picture>
+        <div class="logo-box">
+            <div>
+                <img class="logo" src="images/svcclogo.png" alt="Star Valley Chamber of Commerce Img">
+            </div>
             <section class="headings">
                 <h1>Star Valley</h1>
-                <q class="slogan">Municipality Chamber of Commerce</q>
+                <div class="moto">
+                    <p>Municipality Chamber of Commerce</p>
+                </div>
             </section>
         </div>
         <div class="social">
             <a href="http://facebook.com"></a>
         </div>
-        <nav class="topnav">
-            <div><a href="" class="active">Home</a></div>
-            <div><a href=""></a></div>
-            <div><a href=""></a></div>
-            <div><a href=""></a></div>
-        </nav>
     </header>
+    <div id="pancakemessage">
+        <p>
+           Message for SV.
+        </p>
+    </div>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="scripts/date.js" onclick="toggleMenu()">&#9776;</a></li>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Discover</a>
+            </li>
+           <li>
+                <a href="">Directory</a>
+            </li>
+            <li>
+                <a href="">Join</a>
+            </li>
+            <li>
+                <a href="">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    
     <main>
         
     </main>
@@ -52,4 +74,4 @@
         </div>
     </footer>
 </body>
-</html> 
+</html>
