@@ -9,51 +9,74 @@ font-family: 'Roboto', sans-serif; - Headings/Footer
 */
 
 body {
-    background-color: #f8f8f0;
-    margin: 0 auto;
-    width: 100%;
+    background-color: whitesmoke;
 }
 
 header, footer {
     background-color: #001242;
-    color: #F0F0C9;
-    font-family: 'Roboto', sans-serif;
-    padding: 1em;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/*HEADER*/
+
+.logo-box {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.fbicon {
+    height: 30px;
+    width: auto;
+}
+
+.twittericon {
+    height: 30px;
+    width: auto;
 }
 
 .logo {
-    width: 150px;
-    height: auto;
+    height: 80px;
+    width: auto;
+}
+
+.moto p {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: small;
+}
+
+.imgcontainer {
+    align-self: flex-start;
 }
 
 .headings {
-    display: flex;
-    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 1.7rem;
 }
 
+.headings h1 {
+    margin: 0;
+    font-weight: 1000;
+}
+
+/*NAVIGATION*/
+
 nav {
-	background-color: #001242;
-    color: #F0F0C9;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    background-color: aliceblue;
 }
 
 .navigation {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin-top: 0;
-    text-align: center;
 }
 
 .navigation li {
-    display: block;
-    flex: 1 1 auto;
-}
-
-.navigation li:first-child {
-    display: block;
+    display: none;
 }
 
 .navigation a {
@@ -61,31 +84,31 @@ nav {
     padding: .75rem;
     text-align: left;
     text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
 .navigation a:hover {
-    color: black;
-    background-color: #F0F0C9;
+    color: white;
+    background-color: #001242;
 }
 
-.active {
-	background-color: #082b8d;
-    border-radius: 10px;
-}
 
-.responsive li {
-    display: block;
-}
 
-.responsive a.ham::before {
-	content: "❌ ";
-}
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+
+/*FOOTER*/
 
 footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
-    text-align: center;
+    text-align: left;
     color: #fbfbfb;
 }

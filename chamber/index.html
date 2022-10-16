@@ -20,8 +20,8 @@
 <body>
     <header>
         <div class="logo-box">
-            <div>
-                <img class="logo" src="images/svcclogo.png" alt="Star Valley Chamber of Commerce Img">
+            <div class="imgcontainer">
+                <img class="logo" src="images/svccl.png" alt="Star Valley Chamber of Commerce Img">
             </div>
             <section class="headings">
                 <h1>Star Valley</h1>
@@ -31,31 +31,29 @@
             </section>
         </div>
         <div class="social">
-            <a href="http://facebook.com"></a>
+            <a href="http://facebook.com"><img class="fbicon" src="images/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
         </div>
     </header>
-    <div id="pancakemessage">
+    <!-- <div id="pancakemessage">
         <p>
            Message for SV.
         </p>
-    </div>
-    <nav>
-        <ul class="navigation">
-            <li><a class="ham" href="scripts/date.js" onclick="toggleMenu()">&#9776;</a></li>
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Discover</a>
+    </div> -->
+    <nav class="navigation">
+        <button id="ham"><span>&#9776;</span><span>X</span></button>
+        <ul id="navigation" class="navigation">
+            <li class="active">
+                <a href="index.html">Discover</a>
             </li>
            <li>
-                <a href="">Directory</a>
+                <a href="directory.html">Directory</a>
             </li>
             <li>
-                <a href="">Join</a>
+                <a href="join.html">Join</a>
             </li>
             <li>
-                <a href="">Contact</a>
+                <a href="contact.html">Contact</a>
             </li>
         </ul>
     </nav>
@@ -64,13 +62,13 @@
         
     </main>
     <footer>
-
         <div class="home-footer">
             © 2022 | Brennen Robinson | WDD 230 Project |
 
             Last Modification:
             <span id="currentDate"></span>
             <script src="scripts/date.js"></script>
+            <script src="scripts/responsivenav.js"></script>
         </div>
     </footer>
 </body>
