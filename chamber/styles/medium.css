@@ -1,3 +1,92 @@
 @media only screen and (min-width: 32.5em) {
     
+
+
+    /* Navigation */
+    nav button {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        margin: 0 auto;
+    }
+    nav ul li {
+        padding: .5rem 1rem;
+        font-size: 1.8rem;
+
+    }
+    nav ul.hide {
+        display: flex;
+    }
+
+    /* Main */
+    main {
+        display: grid;
+    }
+
+    /* .hero, .news, .spotlight, .join, .event, .weather {
+
+    } */
+
+    .hero {
+        grid-column: 1/4;
+    }
+
+    .news {
+        grid-row-start: 2;
+        grid-column: 1/4;
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row-start: 3;
+        grid-column: 1/4;
+    }
+
+    .join {
+        grid-row-start: 4;
+        grid-column: 1/4;
+    }
+
+    .event {
+        grid-row-start: 5;
+        grid-column: 1/3;
+    }
+
+    .weather {
+        grid-row-start: 5;
+        grid-column: 3/4;
+    }
+
+    /* Footer */
+
+    .contactInfo {
+        display: grid;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    footer section img {
+        grid-column: 1/2;
+        padding: 5px;
+    }
+
+    #address {
+        grid-column: 2/3;
+        padding: 5px;
+    }
+
+    #contact {
+        grid-column: 3/4;
+        padding: 5px;
+        justify-content: center;
+    }
+
+    footer img {
+        width: 100px;
+        height: auto;
+    }
 }

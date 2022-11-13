@@ -14,13 +14,15 @@ body {
 
 header, footer {
     background-color: #001242;
-    color: white;
     padding: 1rem;
     display: flex;
-    flex-direction: row;
 }
 
 /*HEADER*/
+
+header {
+    padding-bottom: 0;
+}
 
 .logo-box {
     display: flex;
@@ -56,6 +58,7 @@ header, footer {
 .headings {
     align-self: flex-end;
     padding-bottom: 1.7rem;
+    color: #fbfbfb;
 }
 
 .headings h1 {
@@ -66,28 +69,44 @@ header, footer {
 /*NAVIGATION*/
 
 nav {
-    margin: 0 auto;
-    background-color: aliceblue;
-}
-
-.navigation {
-    list-style: none;
+    font-weight: 400;
+    background-color: #001242;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #fbfbfb;
+    margin: 0;
     padding: 0;
 }
 
-.navigation li {
+nav button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    padding-bottom: .1em;
+    color: #fbfbfb;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul.hide {
     display: none;
 }
 
-.navigation a {
+nav li {
+    flex: 0 auto;
+    list-style: none;
+}
+
+nav a {
     display: block;
-    padding: .75rem;
-    text-align: left;
+    padding: .5em .5em .5em .5em;
+    text-align: center;
     text-decoration: none;
-    color: black;
-    font-weight: 700;
-    transition: 0.5s;
-    font-size: clamp(1rem, 2vmin, 1.5rem);
+    color: #fbfbfb;
 }
 
 .navigation a:hover {
@@ -95,20 +114,61 @@ nav {
     background-color: #001242;
 }
 
+#dateSpan {
+    color: #fbfbfb;
+    background-color: #001242;
+    margin: 0;
+    padding: .7em;
+    text-align: center;
+    font-size: .9em;
+}
 
+/* MAIN */
+main {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+}
 
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;}
+.spotlight {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: auto;
+}
 
-#hamburgerBtn.open span:nth-child(1) {display: none;}
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+.sl3 {
+    display: none;
+}
+
+main section {
+    background-color: rgb(187, 185, 185);
+    margin: 8px auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+}
 
 /*FOOTER*/
 
 footer {
-    position: fixed;
     bottom: 0;
-    width: 100%;
-    text-align: left;
     color: #fbfbfb;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer img {
+    width: 20%;
+    height: auto;
+}
+
+.contactInfo {
+    font-size: .8em;
+}
+.classInfo {
+    font-size: .8em;;
 }

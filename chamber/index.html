@@ -26,7 +26,7 @@
             <section class="headings">
                 <h1>Star Valley</h1>
                 <div class="moto">
-                    <p>Municipality Chamber of Commerce</p>
+                    <p>Chamber of Commerce</p>
                 </div>
             </section>
         </div>
@@ -35,41 +35,84 @@
             <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
         </div>
     </header>
-    <!-- <div id="pancakemessage">
-        <p>
-           Message for SV.
-        </p>
-    </div> -->
-    <nav class="navigation">
-        <button id="ham"><span>&#9776;</span><span>X</span></button>
-        <ul id="navigation" class="navigation">
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navigation" class="hide">
             <li class="active">
-                <a href="index.html">Discover</a>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="#">Discover</a>
             </li>
            <li>
-                <a href="directory.html">Directory</a>
+                <a href="#">Directory</a>
             </li>
             <li>
-                <a href="join.html">Join</a>
+                <a href="#">Join</a>
             </li>
             <li>
-                <a href="contact.html">Contact</a>
+                <a href="#">Contact</a>
             </li>
         </ul>
     </nav>
     
+    <p id="dateSpan"> 
+        <span id="today"></span>
+    </p>
+
     <main>
-        
+        <section class="hero">
+            <p>Hero with site name and call to action</p>
+        </section>
+        <section class="news">
+            <p>News Release</p>
+        </section>
+        <section class="spotlight">
+            <section>
+                <p>Spotlight 1</p>
+            </section>
+            <section>
+                <p>Spotlight 2</p>
+            </section>
+            <section class="sl3">
+                <p>Spotlight 3</p>
+            </section>
+        </section>
+        <section class="join">
+            <p>Join</p>
+        </section>
+        <section class="event">
+            <p>Event</p>
+        </section>
+        <section class="weather">
+            <p>Weather</p>
+        </section>
     </main>
     <footer>
-        <div class="home-footer">
-            © 2022 | Brennen Robinson | WDD 230 Project |
+        <section class="contactInfo">
+            <img src="images/svccl.png" alt="Star Valley CC logo">
+            <section id="address">
+                <h2 class="address">Star Valley Chamber of Commerce</h2>
+                <p>4837 Main Street</p>
+                <p>Thayne, WY 83127</p>
+            </section>
+            <section id="contact">
+                <p>email@svchamber.com</p>
+                <p>(307) 000-0000</p>
+                <p>&#128205; Location Pin</p>
+            </section>
+        </section>
 
-            Last Modification:
-            <span id="currentDate"></span>
-            <script src="scripts/date.js"></script>
-            <script src="scripts/responsivenav.js"></script>
-        </div>
+        <section class="classInfo">
+            <p>&copy; <span id="year">2022</span></p>
+            <p>Star Valley Chamber of Commerce</p>
+            <p>Brennen Robinson</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span id="last-visit"></span> days ago.</p>
+        </section>
     </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/responsivenav.js"></script>
+    <script src="scripts/lastvisit.js"></script>
 </body>
 </html>

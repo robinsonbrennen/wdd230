@@ -1,11 +1,6 @@
 function toggleMenu() {
-    document.getElementById('navigation').classList.toggle('open');
-    document.getElementById('ham').classList.toggle('open');  
+    document.getElementById('navigation').classList.toggle('hide');
 }
-
-const x = document.getElementById('ham');
-
-x.onclick = toggleMenu;
 
 let memo = date.getDay();
 

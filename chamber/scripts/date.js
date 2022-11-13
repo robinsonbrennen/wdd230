@@ -29,7 +29,7 @@ let dayName = daynames[d.getDay()];
 let monthName = months[d.getMonth()];
 let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFullYear();
 
-document.getElementById("currentDate").innerHTML = fulldate;
+document.getElementById("today").innerHTML = fulldate;
 
 //current date 2
 
@@ -41,7 +41,7 @@ try {
        year: "numeric"
    };
    document.getElementById(
-       "currentDate"
+       "today"
    ).textContent = new Date(document.lastModified).toLocaleDateString("en-US", options);
    } catch (e) {
        alert("Error with code or your browser does not support Locale");
