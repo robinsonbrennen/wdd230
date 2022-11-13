@@ -101,6 +101,11 @@ nav li {
     list-style: none;
 }
 
+nav li:hover {
+    background-color: #092266;
+
+}
+
 nav a {
     display: block;
     padding: .5em .5em .5em .5em;
