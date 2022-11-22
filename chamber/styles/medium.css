@@ -39,11 +39,15 @@
         grid-column: 1/4;
     }
 
-    .spotlight {
+    .slbox {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-row-start: 3;
         grid-column: 1/4;
+    }
+
+    .sl3 {
+        display: none;
     }
 
     .join {
@@ -88,5 +92,10 @@
     footer img {
         width: 100px;
         height: auto;
+    }
+
+    footer {
+        width: 100%;
+        margin: 0 auto;
     }
 }

@@ -1,0 +1,15 @@
+header, main {
+    display: grid;
+    grid-gap: 25px;
+    justify-content: center;
+    text-align: center;
+ }
+ 
+ picture img[data-src] {
+    filter: blur(0.2em);
+ }
+  
+ picture img {
+    filter: blur(0em);
+    transition: filter 1s;
+ }

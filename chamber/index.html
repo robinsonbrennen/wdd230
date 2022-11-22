@@ -55,37 +55,80 @@
             </li>
         </ul>
     </nav>
-    
     <p id="dateSpan"> 
         <span id="today"></span>
     </p>
-
+    <div id="banner">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
     <main>
         <section class="hero">
-            <p>Hero with site name and call to action</p>
+            <source srcset="images/chamberhero400.jpg" media="(max-width: 32.5em)">
+            <source srcset="images/chamberhero600" media="(max-width: 60em)">
+            <source srcset="images/chamberhero800" media="(max-width: 120em)"> 
+            <img class="heroimg" src="images/chamberheroorig.jpg" alt="Office Meeting">
+            <button class="join1"><li><a href="join.html">Join the Chamber</a></li></button>
         </section>
         <section class="news">
-            <p>News Release</p>
+            <h2>News Release</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis at placeat omnis nesciunt nulla minus nemo. Repellendus impedit esse ipsam aspernatur quam ullam, dolore nam maiores eum, numquam at?</p>
         </section>
-        <section class="spotlight">
-            <section>
-                <p>Spotlight 1</p>
+        <section class="slbox">
+            <section class="sl1, spotlight">
+                <h2>Thankful Transport</h2>
+                <img src="images/truckpic2.svg" alt="Truck Picture">
+                <br>
+                <p>"We get it there for you!"</p>
+                <br>
+                <p>hello@thankfultransport.com</p>
+                <br>
+                <p>+999-999-9999 | Website</p>
             </section>
-            <section>
-                <p>Spotlight 2</p>
+            <section class="sl2, spotlight">
+                <h2>Code Primera</h2>
+                <img src="images/computer.svg" alt="Picture of a computer">
+                <br>
+                <p>"An after school coding instructional program."</p>
+                <br>
+                <p>contact@codeprimera.com</p>
+                <br>
+                <p>+999-999-9999 | Website</p>
             </section>
             <section class="sl3">
-                <p>Spotlight 3</p>
+                <h2>Build A Treefort</h2>
+                <img src="images/tree.svg" alt="Tree Picture">
+                <br>
+                <p>"Over 1000 plans!"</p>
+                <br>
+                <p>builda@treefort.com</p>
+                <br>
+                <p>+999-999-9999 | Website</p>
             </section>
         </section>
-        <section class="join">
+        <section class="join2">
             <p>Join</p>
         </section>
         <section class="event">
-            <p>Event</p>
+            <h2>Ribbon Cutting</h2>
+            <h3>*The Diamond Shack*</h3>
+            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
+            <br>
+            <p><a href="#">more info ...</a></p>
         </section>
         <section class="weather">
-            <p>Weather</p>
+            <img src="images/weather.webp" alt="Clouds and blue sky">
+            <div class="weatherInfo">
+                <h3>Weather</h3>
+                <figure>
+                    <img src="" alt="" id="icon" />
+                    <figcaption></figcaption>
+                </figure>                
+                <p>Current temp: <span id="temp"></span></p>
+                <p>Wind speed: <span id="speed"></span></p>
+                <p>Wind chill: <span id="chill"></span></p>
+            </div>
         </section>
     </main>
     <footer>

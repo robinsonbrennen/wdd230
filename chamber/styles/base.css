@@ -128,23 +128,125 @@ nav a {
     font-size: .9em;
 }
 
+#banner {
+    color: #fbfbfb;
+    background-color: #001242;
+    margin: 0;
+    padding: .5em;
+    text-align: center;
+}
+
 /* MAIN */
 main {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
 }
 
+.hero {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.heroimg {
+    width: 100%;
+    object-fit: cover;
+    max-height: 300px;
+}
+
+.hero button {
+    position: relative;
+    top: -80px;
+    background-color: #fdbf5e;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+}
+
+.hero button li {
+    list-style: none;
+}
+
+.hero button:hover {
+    background-color: #001242;
+}
+
+.hero button a:hover {
+    color: #fbfbfb;
+}
+
+.hero button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.news p {
+    text-align: left;
+}
+
 .spotlight {
-    display: flex;
-    flex-direction: row;
     width: 95%;
-    height: auto;
+    background-color: #001242;
+    color: aliceblue;
+}
+
+.spotlight img {
+    width: 8em;
+}
+
+.spotlight p {
+    margin: 0 auto;
 }
 
 .sl3 {
     display: none;
+    width: 95%;
+    background-color: #001242;
+    color: aliceblue;
+}
+
+.sl3 img {
+    width: 8em;
+}
+
+.sl3 p {
+    margin: 0 auto;
+}
+
+.join2 {
+    display: none;
+}
+
+.event, .news, .weather {
+    background-color: #001242;
+    color: aliceblue;
+}
+
+.event p {
+    margin: 0 auto;
+}
+
+.event {
+    width: 80%;
+}
+
+.event p a {
+    text-decoration: none;
+    color: #fdbf5e;
+}
+
+.event p a:hover {
+    color: aqua;
+}
+
+.weather {
+    width: 70%;
 }
 
 main section {
@@ -175,5 +277,7 @@ footer img {
     font-size: .8em;
 }
 .classInfo {
-    font-size: .8em;;
+    font-size: .8em;
+    display: flex;
+    justify-content: center;
 }

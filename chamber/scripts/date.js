@@ -31,6 +31,14 @@ let fulldate = dayName + ", " + monthName + " " + d.getDate() + ", " + d.getFull
 
 document.getElementById("today").innerHTML = fulldate;
 
+
+if (dayName == "Monday" || dayName == "Tuesday") {
+    document.getElementById("banner").style.display = "block";
+}
+else {
+    document.getElementById("banner").style.display = "none";
+}
+
 //current date 2
 
 try {
