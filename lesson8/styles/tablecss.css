@@ -1,0 +1,95 @@
+body {
+   background-color: #f6d0b1;
+   background-attachment: fixed;
+   background-size: cover;
+   margin: 0 auto;
+   max-width: 100%;
+   font-family: 'Amaranth', sans-serif;
+}
+
+/*Header*/
+
+header {
+   background-color: transparent;
+   padding: 5px 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.moto {
+   font-weight: bold;
+}
+
+.logo {
+   width: 150px;
+   height: auto;
+}
+
+/*Main*/
+
+main {
+   padding: 20px;
+   margin: auto;
+}
+
+/* Table */
+
+table {
+   font-family: 'Ubuntu', sans-serif;
+   border: 1px solid grey;
+   border-spacing: 0;
+   box-shadow: 10px 10px 5px grey;
+   text-align: center;
+   margin: auto;
+}
+
+thead tr th {
+   background-color: #7fb9c2;
+   padding: 10px;
+   font-weight: bold;
+   font-size: larger;
+}
+
+tr {
+   background-color: #e7f0ed;
+}
+
+table td {
+   border: 1px solid grey;
+   padding: 5px 5px;
+}
+
+tr:nth-child(even) {
+   background-color: #e7ffed;
+}
+
+table tfoot tr td {
+   background-color: #7fb9c2;
+   padding: 5px;
+   font-size: smaller;
+}
+
+table .makeBlue {
+   background-color: #628ca6;
+   color: white;
+}
+
+table thead tr td {
+   font-weight: bold;
+}
+
+tr:nth-child(5) td:nth-child(1) {
+   font-style: italic;
+}
+
+
+/*Footer*/
+
+/*Clearfix*/
+
+.clearfix:after {
+   content: "";
+   display: table;
+   clear: both;
+}
