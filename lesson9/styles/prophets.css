@@ -1,0 +1,56 @@
+/*Small View*/
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 15px;
+    grid-gap: 10px;
+    justify-content: center;
+ }
+ 
+ section {
+    background-color: #c1d38d;
+    padding-bottom: 1em;
+    border: 5px #b3b5af solid;
+    border-radius: 5px;
+ }
+ 
+ h2,
+ h1 {
+    font-family: Amaranth, open-sans;
+    text-align: center;
+ }
+ 
+ p {
+    font-family: Amaranth, open-sans;
+    text-align: center;
+ }
+ 
+ img {
+    margin: 0 auto;
+    display: block;
+    max-width: 80%;
+    box-shadow: 3px 3px 5px 8px #454645;
+ }
+ 
+ footer {
+    text-align: center;
+    padding: 3rem;
+ }
+ 
+ 
+ 
+ /*Medium View*/
+ @media only screen and (min-width: 32em) {
+    div.cards {
+       grid-template-columns: repeat(2, 1fr);
+    }
+ }
+ 
+ 
+ 
+ /*Large View*/
+ @media only screen and (min-width: 60em) {
+    div.cards {
+       grid-template-columns: repeat(4, 1fr);
+    }
+ }
