@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Brennen Robinson">
+    <meta name="description" content="WDD 230 - This is the join page for the chamber of commerce website assignment">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>WDD 230 - Brennen Robinson - Join page for the Star Valley chamber of commerce website</title>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <div class="imgcontainer">
+                <img class="logo" src="images/svccl.png" alt="Star Valley Chamber of Commerce Img">
+            </div>
+            <section class="headings">
+                <h1>Star Valley</h1>
+                <div class="moto">
+                    <p>Chamber of Commerce</p>
+                </div>
+            </section>
+        </div>
+        <div class="social">
+            <a href="http://facebook.com"><img class="fbicon" src="images/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navigation" class="hide">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="discovery.html">Discover</a>
+            </li>
+           <li>
+                <a href="#">Directory</a>
+            </li>
+            <li class="active">
+                <a href="join.html">Join</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <p id="dateSpan"> 
+        <span id="today"></span>
+    </p>
+    <div id="banner">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
+    <main class="jmain">
+        <h1 class="tmessage">Form has been submitted, you will get a confirmation email shortly of your submission and you will receive another when you have been accepted. Thank you for joining the Star Valley Chamber of Commerce!</h1>
+    </main>
+    <footer class="tfooter">
+        <section class="contactInfo">
+            <img src="images/svccl.png" alt="Star Valley CC logo">
+            <section id="address">
+                <h2 class="address">Star Valley Chamber of Commerce</h2>
+                <p>4837 Main Street</p>
+                <p>Thayne, WY 83127</p>
+            </section>
+            <section id="contact">
+                <p>email@svchamber.com</p>
+                <p>(307) 000-0000</p>
+                <p>&#128205; Location Pin</p>
+            </section>
+        </section>
+
+        <section class="classInfo">
+            <p>&copy; <span id="year">2022</span></p>
+            <p>Star Valley Chamber of Commerce</p>
+            <p>Brennen Robinson</p>
+            <p>WDD 230 Project</p>
+            <p>Last Updated: <span id="last-visit"></span> days ago.</p>
+        </section>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/responsivenav.js"></script>
+    <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>
+</html>

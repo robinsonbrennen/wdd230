@@ -54,3 +54,6 @@ try {
    } catch (e) {
        alert("Error with code or your browser does not support Locale");
    }
+
+   const datetime = document.querySelector("#datetime");
+   datetime.innerHTML = date.toLocaleDateString("en-UK", options);

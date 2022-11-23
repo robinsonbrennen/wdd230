@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Brennen Robinson">
-    <meta name="description" content="WDD 230 - This is the homepage for the chamber of commerce website assignment">
+    <meta name="description" content="WDD 230 - This is the join page for the chamber of commerce website assignment">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <title>WDD 230 - Brennen Robinson - Homepage for the Star Valley chamber of commerce website</title>
+    <title>WDD 230 - Brennen Robinson - Join page for the Star Valley chamber of commerce website</title>
 </head>
 <body>
     <header>
@@ -38,7 +38,7 @@
     <nav class="clearfix">
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="navigation" class="hide">
-            <li class="active">
+            <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -47,7 +47,7 @@
            <li>
                 <a href="#">Directory</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="join.html">Join</a>
             </li>
             <li>
@@ -63,72 +63,59 @@
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
         </p>
     </div>
-    <main class="clearfix">
-        <section class="hero">
-            <source srcset="images/chamberhero400.jpg" media="(max-width: 32.5em)">
-            <source srcset="images/chamberhero600" media="(max-width: 60em)">
-            <source srcset="images/chamberhero800" media="(max-width: 120em)"> 
-            <img class="heroimg" src="images/chamberheroorig.jpg" alt="Office Meeting">
-            <button class="join1"><li><a href="join.html">Join the Chamber</a></li></button>
-        </section>
-        <section class="news">
-            <h2>News Release</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab blanditiis at placeat omnis nesciunt nulla minus nemo. Repellendus impedit esse ipsam aspernatur quam ullam, dolore nam maiores eum, numquam at?</p>
-        </section>
-        <section class="slbox">
-            <section class="sl1, spotlight">
-                <h2>Thankful Transport</h2>
-                <img src="images/truckpic2.svg" alt="Truck Picture">
-                <br>
-                <p>"We get it there for you!"</p>
-                <br>
-                <p>hello@thankfultransport.com</p>
-                <br>
-                <p>+999-999-9999 | Website</p>
+    <main class="jmain">
+        <h2 class="jh2">Join the Star Valley Chamber of Commerce!</h2>
+        <form method="GET" action="thankyou.html" class="joinform">
+            <fieldset class="joinfieldset">
+               <legend class="contactlegend">Name and Contact Information</legend>
+               <label class="top">First Name*<input type="text" name="fname" required></label>
+               <label class="top">Last Name*<input type="text" name="lname" required></label>
+               <label class="top">Email*<input type="email" name="email" placeholder="youremail@website.com" required></label>
+               <label class="top">Phone Number*<input type="tel" name="phone" placeholder="000-000-0000" required></label>
+            </fieldset>
+            <fieldset class="joinfieldset">
+                <legend class="contactlegend">Business Information</legend>
+                <label class="top">Business Name*<input type="text" name="fname" required></label>
+                <label class="top">Business Position<input type="text" name="bustitle" pattern="[A-Za-z -]"></label>
+                <label class="top">Business Description<input type="text" name="busdescription"></label>
+             </fieldset>
+             <fieldset class="joinfieldset">
+                <legend class="contactlegend">Desired Membership Tier</legend>
+                <section>
+                    <label class="tiers">
+                        <input type="radio" name="radanswer" >Non-Profit Tier
+                    </label>
+                    <label class="tiers">
+                        <input type="radio" name="radanswer" >Bronze Tier
+                    </label>
+                    <label class="tiers">
+                        <input type="radio" name="radanswer" >Silver Tier
+                    </label>
+                    <label class="tiers">
+                        <input type="radio" name="radanswer" >Gold Tier
+                    </label>
+                </section>
+             </fieldset>
+             <input type="hidden" id="datetime" name="dateandtime">
+             <input type="submit" value="Submit Application" class="submitbtn">
+         </form>
+         <section class="tierdescriptions">
+            <section class="nonprofit">
+                <h3>Non-Profit Tier: Free</h3>
+                <p>Non-profit organizations can join free of charge and will get free access to Chamber events.</p>
             </section>
-            <section class="sl2, spotlight">
-                <h2>Code Primera</h2>
-                <img src="images/computer.svg" alt="Picture of a computer">
-                <br>
-                <p>"An after school coding instructional program."</p>
-                <br>
-                <p>contact@codeprimera.com</p>
-                <br>
-                <p>+999-999-9999 | Website</p>
+            <section class="bronze">
+                <h3>Bronze Tier: $119/year</h3>
+                <p>The Bronze tier subscription gets you access to Chamber events.</p>
             </section>
-            <section class="sl3">
-                <h2>Build A Treefort</h2>
-                <img src="images/tree.svg" alt="Tree Picture">
-                <br>
-                <p>"Over 1000 plans!"</p>
-                <br>
-                <p>builda@treefort.com</p>
-                <br>
-                <p>+999-999-9999 | Website</p>
+            <section class="silver">
+                <h3>Silver Tier: $279/year</h3>
+                <p>The Silver tier subscription gets you access to Chamber events and training meetings.</p>
             </section>
-        </section>
-        <section class="join2">
-            <button><a href="join.html"><strong>Join Us!</strong></a></button>
-            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-        </section>
-        <section class="event">
-            <h2>Ribbon Cutting</h2>
-            <h3>*The Diamond Shack*</h3>
-            <p>Join us for the grand opening of The Diamond Shack, Thursday at 1:00 p.m.</p>
-            <br>
-            <p><a href="#">more info ...</a></p>
-        </section>
-        <section class="weather">
-            <div class="weatherInfo">
-                <h3>Weather</h3>
-                <figure>
-                    <img src="" alt="" id="icon" />
-                    <figcaption></figcaption>
-                </figure>                
-                <p>Current Temperature: <span id="temp"></span></p>
-                <p>Wind Speed: <span id="speed"></span></p>
-                <p>Wind Chill: <span id="chill"></span></p>
-            </div>
+            <section class="gold">
+                <h3>Gold Tier: $599/year</h3>
+                <p>The Gold tier subscription gets you access to Chamber events, training meetings, and exclusive advertising benefits on the Chamber website and elsewhere.</p>
+            </section>
         </section>
     </main>
     <footer>

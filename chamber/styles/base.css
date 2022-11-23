@@ -324,3 +324,72 @@ footer img {
     font-weight: 700;
     font-size: medium;
 }
+
+
+/* Join Page */
+.jmain {
+    display: grid;
+}
+
+.jh2 {
+    text-align: center;
+}
+
+.joinform {
+    display: flex;
+    flex-direction: column;
+    grid-column: 1/2;
+    padding: 1.5em;
+}
+
+.joinfieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactlegend {
+    padding: .5em;
+    font-size: large;
+    font-weight: 800;
+}
+
+.top {
+    padding: .5em;
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.top input {
+    height: 2em;
+}
+
+.tiers {
+    display: flex;
+    font-weight: 600;
+}
+
+.tierdescriptions {
+    grid-column: 2/3;
+    display: none;
+}
+
+.submitbtn {
+    background-color: rgb(37, 50, 236);
+    font-size: larger;
+    font-weight: 800;
+    color: white;
+    height: 2.5em;
+    width: 400px;
+    margin-top: 1.5em;
+}
+
+/* Thank You Page */
+.tmessage {
+    text-align: center;
+    padding: 1em;
+}
+
+.tfooter {
+    position: fixed;
+}
