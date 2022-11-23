@@ -375,10 +375,10 @@ footer img {
 }
 
 .submitbtn {
-    background-color: rgb(37, 50, 236);
+    background-color: #fdbf5e;
     font-size: larger;
     font-weight: 800;
-    color: white;
+    color: black;
     height: 2.5em;
     width: 400px;
     margin-top: 1.5em;
