@@ -63,7 +63,7 @@
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
         </p>
     </div>
-    <main>
+    <main class="clearfix">
         <section class="hero">
             <source srcset="images/chamberhero400.jpg" media="(max-width: 32.5em)">
             <source srcset="images/chamberhero600" media="(max-width: 60em)">
@@ -108,7 +108,8 @@
             </section>
         </section>
         <section class="join2">
-            <p>Join</p>
+            <button><a href="join.html"><strong>Join Us!</strong></a></button>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
         </section>
         <section class="event">
             <h2>Ribbon Cutting</h2>
@@ -118,16 +119,15 @@
             <p><a href="#">more info ...</a></p>
         </section>
         <section class="weather">
-            <img src="images/weather.webp" alt="Clouds and blue sky">
             <div class="weatherInfo">
                 <h3>Weather</h3>
                 <figure>
                     <img src="" alt="" id="icon" />
                     <figcaption></figcaption>
                 </figure>                
-                <p>Current temp: <span id="temp"></span></p>
-                <p>Wind speed: <span id="speed"></span></p>
-                <p>Wind chill: <span id="chill"></span></p>
+                <p>Current Temperature: <span id="temp"></span></p>
+                <p>Wind Speed: <span id="speed"></span></p>
+                <p>Wind Chill: <span id="chill"></span></p>
             </div>
         </section>
     </main>
@@ -157,5 +157,6 @@
     <script src="scripts/date.js"></script>
     <script src="scripts/responsivenav.js"></script>
     <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -26,10 +26,6 @@
         display: grid;
     }
 
-    /* .hero, .news, .spotlight, .join, .event, .weather {
-
-    } */
-
     .hero {
         grid-column: 1/4;
     }
@@ -37,6 +33,7 @@
     .news {
         grid-row-start: 2;
         grid-column: 1/4;
+        margin-top: -1.5em;
     }
 
     .slbox {
@@ -50,19 +47,51 @@
         display: none;
     }
 
-    .join {
+    .join1 {
         grid-row-start: 4;
         grid-column: 1/4;
     }
 
+    .join2 {
+        display: block;
+        grid-column: 1/5;
+        margin-bottom: 1.5em;
+    }
+
+    .join2 button {
+        background-color: #fdbf5e;
+        border: none;
+        border-radius: 8px;
+        padding: 1em;
+        width: 100%;
+        box-shadow: 2px 2px 2px 2px black;
+    }
+
+    .join2 button a {
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+    }
+
+    .join2 button a:hover {
+        color: aliceblue;
+    }
+
+    .join2 button:hover {
+        color: aliceblue;
+        background-color: #092266;
+    }
+
     .event {
-        grid-row-start: 5;
+        grid-row: 4/5;
         grid-column: 1/3;
+        width: 90%;
     }
 
     .weather {
-        grid-row-start: 5;
+        grid-row: 4/5;
         grid-column: 3/4;
+        width: 80%;
     }
 
     /* Footer */

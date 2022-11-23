@@ -150,6 +150,7 @@ main {
     margin-top: 10px;
     width: 100%;
     background-color: aliceblue;
+    grid-row: 1/2;
 }
 
 .heroimg {
@@ -233,7 +234,8 @@ main {
 }
 
 .event {
-    width: 80%;
+    width: 95%;
+    grid-row: 2/3;
 }
 
 .event p a {
@@ -247,6 +249,7 @@ main {
 
 .weather {
     width: 70%;
+    grid-row: 3/4;
 }
 
 main section {

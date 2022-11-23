@@ -10,10 +10,13 @@
         grid-row: 1/3;
     }
 
+    .hero picture {
+        padding: 2em;
+    }
+
     .heroimg {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-height: fit-content;
+        grid-row: 1/3;
     }
 
     .news {
@@ -31,7 +34,7 @@
         display: block;
     }
 
-    .join {
+    .join2 {
         grid-row: 3/4;
         grid-column: 1/2;
     }
