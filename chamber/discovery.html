@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Brennen Robinson">
+    <meta name="description" content="WDD 230 - This is the homepage for the chamber of commerce website assignment">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <title>WDD 230 - Brennen Robinson - Homepage for the Star Valley chamber of commerce website</title>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <div class="imgcontainer">
+                <img class="logo" src="images/svcclogo.webp" alt="Star Valley Chamber of Commerce Img">
+            </div>
+            <section class="headings">
+                <h1>Star Valley</h1>
+                <div class="moto">
+                    <p>Chamber of Commerce</p>
+                </div>
+            </section>
+        </div>
+        <div class="social">
+            <a href="http://facebook.com"><img class="fbicon" src="images/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
+        </div>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="navigation" class="hide">
+            <li class="active">
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="discovery.html">Discover</a>
+            </li>
+           <li>
+                <a href="#">Directory</a>
+            </li>
+            <li>
+                <a href="#">Join</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <p id="dateSpan"> 
+        <span id="today"></span>
+    </p>
+    <div id="banner">
+        <p>
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        </p>
+    </div>
+    <main class="dmain">
+        <h2 class="dh2">Discover Star Valley Wyoming</h2>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/barn800.jpg" alt="Field with a Barn">
+            </picture>
+            <figcaption>
+                <h3>Field with a Barn</h3>
+                <p>Star Valley was settled in the late 1870s by Mormon pioneers. Primary sources indicate Star Valley was proclaimed the "Star of All Valleys" for its natural beauty by a general authority of The Church of Jesus Christ of Latter-day Saints (LDS Church). The name was later shortened to Star Valley.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/bison800.jpg" alt="Bison">
+            </picture>
+            <figcaption>
+                <h3>Bison in a Field</h3>
+                <p>Star Valley was inhabited mainly by Shoshone Indians in the summer and fall months until the early 19th century. The natives were drawn to the valley for its abundant game and the pure salt deposits found near the present town of Auburn and also to the south of Afton, Wyoming there are more renowned salt deposits.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/devilsmountain800.jpg" alt="Devils Mountain">
+            </picture>
+            <figcaption>
+                <h3>Devils Mountain</h3>
+                <p>The tower is a sacred site for many Plains Indians as well as a popular site for rock climbing. The month of June is a particularly important time in the Plains religious calendar, when many individuals visit sacred sites to conduct religious services. June is also one of the more popular climbing months.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/elkhornarch800.jpg" alt="Elkhorn Arch">
+            </picture>
+            <figcaption>
+                <h3>Elkhorn Arch</h3>
+                <p>Tucked away in Star Valley there is an enormous arch made entirely of elk antlers. The arch spans all four lanes of U.S. Route 89 as the highway passes through downtown Afton. The arch is 18-feet tall and 75-feet wide. Smaller elk antler arches flank each side of the arch’s base. Although Jackson Hole’s elk antler arches are more widely known, the antler arch in Afton is believed to be the largest in the world.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/starmountain.jpg" alt="Stary Sky with a Snowy Mountain">
+            </picture>
+            <figcaption>
+                <h3>Starry Snowtopped Mountains</h3>
+                <p>The snowy period of the year lasts for 2.9 months, from January 1 to March 30, with a sliding 31-day snowfall of at least 1.0 inches. The month with the most snow in Star Valley is March, with an average snowfall of 1.3 inches. Star Valley is often referred to as the "Swiss Alps" of the United States, our night skies are dark and beautiful.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/tetons2800.jpg" alt="The Grand Tetons">
+            </picture>
+            <figcaption>
+                <h3>The Grand Tetons</h3>
+                <p>The Greys, Snake and Salt rivers all meet near this town on the northern edge of Star Valley, making it the perfect oasis for fly fishing and water sports. Alpine is also known for its miles of premier snowmobiling trails, with snowmobile rentals available at the local JH Adventure Rentals.</p>
+            </figcaption>
+        </figure>
+        <figure class="imgbox">
+            <picture>
+                <img src="images/placeholder800.jpg" data-src="images/tetons800.jpg" alt="The Grand Tetons">
+            </picture>
+            <figcaption>
+                <h3>Amazing Views</h3>
+                <p>Star Valley Wyoming hosts quite a variety of fishing opportunities. The Salt River that flows through the valley offers great fishing for brown, rainbow and cutthroat trout, the Grey's River and little Greys River are home to many fine cutthroat trout and Alpine Canyon's Snake River provides great whitewater adventure fishing for cutthroats. Star Valley is only a 20 mile drive to the world class fly-fishery the South Fork of the Snake. If you prefer lake fishing to rivers 20 mile long Palisades Reservoir provides fishing opportunities for all of the above as well as Kokanee Salmon.</p>
+            </figcaption>
+        </figure>
+    </main>
+    <p class="dDaysSince">It's been <span id="last-visit"></span> days since the last visit.</p>
+    <footer>
+        <section class="contactInfo">
+            <img src="images/svcclogo.webp" alt="Star Valley CC logo">
+            <section id="address">
+                <h2 class="address">Star Valley Chamber of Commerce</h2>
+                <p>4837 Main Street</p>
+                <p>Thayne, WY 83127</p>
+            </section>
+            <section id="contact">
+                <p>email@svchamber.com</p>
+                <p>(307) 000-0000</p>
+                <p>&#128205; Location Pin</p>
+            </section>
+        </section>
+
+        <section class="classInfo">
+            <p>&copy; <span id="year">2022</span></p>
+            <p>Star Valley Chamber of Commerce</p>
+            <p>Brennen Robinson</p>
+            <p>WDD 230 Project</p>
+        </section>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/responsivenav.js"></script>
+    <script src="scripts/lastvisit.js"></script>
+    <script src="scripts/lazyloading.js"></script>
+    <script src="scripts/dayssince.js"></script>
+</body>
+</html>

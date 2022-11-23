@@ -279,8 +279,48 @@ footer img {
 .contactInfo {
     font-size: .8em;
 }
+
 .classInfo {
     font-size: .8em;
     display: flex;
     justify-content: center;
+}
+
+.classInfo p {
+    padding: 0px 5px 0px 5px;
+}
+
+
+/* Discovery Page */
+.dmain {
+    justify-content: center;
+}
+
+.dh2 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.imgbox {
+    background-color: #092266;
+    padding: 1em 1em 1em 1em;
+    max-width: 800px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.imgbox figcaption {
+    text-align: center;
+    color: aliceblue;
+}
+
+.imgbox img {
+    width: 100%;
+    max-width: 800px;
+}
+
+.dDaysSince {
+    text-align: center;
+    font-weight: 700;
+    font-size: medium;
 }
