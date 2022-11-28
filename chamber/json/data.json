@@ -1,0 +1,76 @@
+{
+    "businesses": [
+      {
+        "name": "Aspen Physical Therapy",
+        "address": "491 N Main St. Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.aspentherapy.com",
+        "membership": "Bronze",
+        "imgsrc": "images/aspenphysicaltherapy.png"
+      },
+      {
+        "name": "Aspen Hills Golf Course",
+        "address": "781 Vista East Dr. Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.aspenhills.com",
+        "membership": "Bronze",
+        "imgsrc": "images/aspenhills.jpg"
+      },
+      {
+        "name": "Bank of Star Valley",
+        "address": "113 Peterson Parkway Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.bsv.com",
+        "membership": "Bronze",
+        "imgsrc": "images/bankofstarvalley.webp"
+      },
+      {
+        "name": "Battlson Brothers Flooring",
+        "address": "118 S Main Street Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.bbflooring.com",
+        "membership": "Silver",
+        "imgsrc": "images/battlesonbrothersflooring.png"
+      },
+      {
+        "name": "Cabin Creek Inn",
+        "address": "211 N Main Street Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.cabininn.com",
+        "membership": "Silver",
+        "imgsrc": "images/cabincreekinn.jpg"
+      },
+      {
+        "name": "Champs Chicken",
+        "address": "118 Peterson Parkway Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.champschicken.com",
+        "membership": "Silver",
+        "imgsrc": "images/champschicken.png"
+      },
+      {
+        "name": "Century 21",
+        "address": "190 N Main Street Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.century21.com",
+        "membership": "Gold",
+        "imgsrc": "images/century21.jpg"
+      },
+      {
+        "name": "Maverik",
+        "address": "160 N Main Street Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.maverik.com",
+        "membership": "Gold",
+        "imgsrc": "images/maverik.png"
+      },
+      {
+        "name": "Master Auto",
+        "address": "101352 Us Highway 89 S Thayne, Wyoming 83127",
+        "phone": "307-111-1111",
+        "url": "www.masterauto.com",
+        "membership": "Gold",
+        "imgsrc": "images/masterauto.png"
+      }
+    ]
+}
