@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Brennen Robinson">
-    <meta name="description" content="WDD 230 - This is the thank you page for the chamber of commerce website assignment">
+    <meta name="description" content="WDD 230 - This is the contact page for the chamber of commerce website assignment">
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <title>WDD 230 - Brennen Robinson - Thank You page for the Star Valley chamber of commerce website</title>
+    <title>WDD 230 - Brennen Robinson - Contact page for the Star Valley chamber of commerce website</title>
 </head>
 <body>
     <header>
@@ -50,7 +50,7 @@
             <li>
                 <a href="join.html">Join</a>
             </li>
-            <li>
+            <li class="active">
                 <a href="contact.html">Contact</a>
             </li>
         </ul>
@@ -63,10 +63,27 @@
             🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
         </p>
     </div>
-    <main class="jmain">
-        <h1 class="tmessage">Form has been submitted, you will get a confirmation email shortly of your submission and you will receive another when you have been accepted. Thank you for joining the Star Valley Chamber of Commerce!</h1>
+    <main class="cmain">
+        <div class="contactinfo">
+            <h1>Contact Us!</h1>
+            <h3>Phone Number:<br>(307) 000-0000</h3>
+            <h3>Email:<br>email@svchamber.com</h3>
+            <h3>Open:<br>Mon - Fri<br>9:00AM - 6:00PM</h3>
+         </div>
+         <form method="GET" action="thanks.html" class="contactform">
+            <fieldset class="contactform">
+               <legend class="contactlegend">Contact Us</legend>
+               <label class="top">Fullname*<input type="text" name="fname" placeholder="John J Jingleheimer" required></label>
+               <label class="top">Email*<input type="email" name="email" placeholder="your-email@email.com" required></label>
+               <label class="top">Email Content*<input type="text" name="content" required></label>
+            </fieldset>
+            <input type="submit" value="Send Email" class="submitbtn">
+         </form>
+         <div class="contactmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1737.401335235213!2d-111.00172841800753!3d42.91611425775528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8756067f4a98674b%3A0xadb8939217de0e84!2sThayne%20City%20Hall!5e0!3m2!1sen!2sus!4v1669684821744!5m2!1sen!2sus" width="95%" height="400px" style="border: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         </div>
     </main>
-    <footer class="tfooter">
+    <footer class="cfooter">
         <section class="contactInfo">
             <img src="images/svccl.png" alt="Star Valley CC logo">
             <section id="address">

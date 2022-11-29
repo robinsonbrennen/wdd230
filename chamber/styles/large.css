@@ -49,9 +49,19 @@
         grid-column: 1/2;
     }
 
+    /* Directory Page */
+    .buscards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
     /* Footer */
     footer {
         width: 100%;
         margin: 0 auto;
     }
+
+    
 }

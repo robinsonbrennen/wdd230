@@ -1,5 +1,3 @@
-//current date 1
-
 let daynames = [
    "Sunday",
    "Monday",

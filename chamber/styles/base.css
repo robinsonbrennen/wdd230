@@ -329,6 +329,7 @@ footer img {
 /* Join Page */
 .jmain {
     display: grid;
+    justify-content: center;
 }
 
 .jh2 {
@@ -392,4 +393,47 @@ footer img {
 
 .tfooter {
     position: fixed;
+}
+
+/* Contact Page */
+.cmain {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.contactform input {
+    width: 80%;
+    max-width: 300px;
+}
+
+.contactmap {
+    padding: 1em 1em 1em 1em;
+    margin: 1em 1em 1em 1em;
+    align-items: center;
+}
+
+/* Directory Page */
+.dirmain {
+    text-align: center;
+}
+
+.dirmain h2 {
+    font-size: 2.5em;
+}
+
+.buscards img {
+    width: 50%;
+}
+
+.buscards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.list img {
+    display: none;
 }

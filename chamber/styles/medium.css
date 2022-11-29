@@ -140,4 +140,12 @@
         max-width: 400px;
         margin: 1em 1em 1em 1em;
     }
+
+    /* Directory Page */
+    .buscards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
 }
