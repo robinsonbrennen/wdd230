@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brennen Robinson">
+    <meta name="description" content="The Bountiful Foods homepage aims to provide users a simple and pleasing page showing information about different ways they can interact with Bountiful Foods and other useful information.">
+    <title>Home page for Brennen Robinson's Bountiful Foods Website</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <picture class="toplogo">
+            <img src="images/bflogotrans.png" alt="Bountiful Foods Logo">
+        </picture>
+        <div class="socialbox">
+            <a href="http://facebook.com"><img class="fbicon" src="images/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
+            <a href="http://instagram.com"><img class="instaicon" src="images/instaicon.png" alt="Instagram Icon"></a>
+        </div>
+    </header>
+    <div class="navbox">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section class="hero">
+            <source srcset="images/strawberrysplash400" media="(max-width: 32.5em)">
+            <source srcset="images/strawberrysplash800" media="(max-width: 60em)">
+            <source srcset="images/strawberrysplash1200" media="(max-width: 120em)"> 
+            <img class="heroimg" src="images/strawberrysplash.jpg" alt="Strawberries in a glass container">
+            <button class="fresh"><li><a href="fresh.html">Make your own fruit drink mix!</a></li></button>
+        </section>
+        <section class="summaryinfo">
+            <img src="images/santabarbara.jpg" alt="Santa Barbara City" style="width:100%;">
+            <div class="centered">
+                <h2>Santa Barbara</h2>
+                <p>Santa Barbara is a city on the central California coast, with the Santa Ynez Mountains as dramatic backdrop. Downtown, Mediterranean-style white stucco buildings with red-tile roofs reflect the city’s Spanish colonial heritage. Upscale boutiques and restaurants offering local wines and seasonal fare line State Street. On a nearby hill, Mission Santa Barbara, founded in 1786, houses Franciscan friars and a museum.</p>
+                <br>
+                <p><a href="about.html">Want to get to know more?</a></p>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="weatherInfo">
+                <h3>Weather</h3>
+                <figure>
+                    <img src="" alt="" id="icon" />
+                    <figcaption></figcaption>
+                </figure>                
+                <p>Current Temperature: <span id="temp"></span></p>
+                <p>Wind Speed: <span id="speed"></span></p>
+                <p>Wind Chill: <span id="chill"></span></p>
+            </div>
+        </section>
+        <!-- <section class="weathersummary">
+            <h2>Current Weather</h2>
+            <p>Currently:
+               <span id="current" class="weather"></span>
+            </p>
+            <p>Temperature:
+               <span id="current-temp" class="temperature weather"></span>
+               °F
+            </p>
+            <p>Humidity:
+               <span id="humidity" class="weather"></span>%
+            </p>
+        </section>
+        <section class="forecast">
+            <h2>3 Day Forecast</h2>
+            <div class="forecast1">
+            </div>
+        </section> -->
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
