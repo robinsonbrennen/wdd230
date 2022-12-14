@@ -84,7 +84,7 @@ const wChill = document.querySelector("#chill");
 const weatherIcon = document.querySelector('#icon');
 const capDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=34.4208&lon=-119.6982&units=imperial&APPID=6f64b0e840868387049e54d12e8f7465';
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=42.7249&lon=-110.9319&units=imperial&APPID=e641a35ce91046feb0e7923b7d2101c0';
 
 async function apiFetch() {
     try {
