@@ -78,20 +78,76 @@
 // }
 
 
-const currentTemp = document.querySelector("#temp");
-const wSpeed = document.querySelector("#speed");
-const wChill = document.querySelector("#chill");
-const weatherIcon = document.querySelector('#icon');
-const capDesc = document.querySelector('figcaption');
+// const currentTemp = document.querySelector("#temp");
+// const wSpeed = document.querySelector("#speed");
+// const wChill = document.querySelector("#chill");
+// const weatherIcon = document.querySelector('#icon');
+// const capDesc = document.querySelector('figcaption');
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=42.7249&lon=-110.9319&units=imperial&APPID=e641a35ce91046feb0e7923b7d2101c0';
+// const url = 'https://api.openweathermap.org/data/2.5/weather?lat=42.7249&lon=-110.9319&units=imperial&APPID=e641a35ce91046feb0e7923b7d2101c0';
+
+// async function apiFetch() {
+//     try {
+//       const response = await fetch(url);
+//       if (response.ok) {
+//         const data = await response.json();
+//         //console.log(data); // this is for testing the call
+//         displayResults(data);
+//       } else {
+//           throw Error(await response.text());
+//       }
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+
+// function windChill() {
+//     if (wSpeed > 3 && currentTemp <= 50) {
+//         windChill = 35.74 + 0.6215 * currentTemp - 35.75 * wSpeed ** 0.16 + 0.4275 * currentTemp * wSpeed ** 0.16;
+//     } else {
+//         windChill = "NA";
+//     }
+//     return windChill;
+// }
+
+// function displayResults(weatherData) {
+//     const iconSrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
+//     const desc = `${weatherData.weather[0].description}`;
+//     icon.setAttribute('src', iconSrc);
+//     icon.setAttribute('alt', desc);
+//     capDesc.textContent = desc;
+
+//     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+
+//     wSpeed.innerHTML = `${weatherData.wind.speed}`;
+
+//     wChill.innerHTML = windChill();
+// }
+
+
+const temp1 = document.querySelector('#temp1');
+const icon1 = document.querySelector('#icon1');
+const caption1 = document.querySelector('#caption1');
+const humidity1 = document.querySelector('#humidity1');
+
+const temp2 = document.querySelector('#temp2');
+const icon2 = document.querySelector('#icon2');
+const caption2 = document.querySelector('#caption2');
+const humidity2 = document.querySelector('#humidity2');
+
+const temp3 = document.querySelector('#temp3');
+const icon3 = document.querySelector('#icon3');
+const caption3 = document.querySelector('#caption3');
+const humidity3 = document.querySelector('#humidity3');
+
+const url = 'https://api.openweathermap.org/data/3.0/onecall?lat=33.158092&lon=-117.350594&units=imperial&limit=3&appid=2a2cc982298750eb39fb8f6efb6d7dba';
 
 async function apiFetch() {
     try {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        //console.log(data); // this is for testing the call
+        console.log(data);
         displayResults(data);
       } else {
           throw Error(await response.text());
@@ -101,27 +157,38 @@ async function apiFetch() {
     }
 }
 
-function windChill() {
-    if (wSpeed > 3 && currentTemp <= 50) {
-        windChill = 35.74 + 0.6215 * currentTemp - 35.75 * wSpeed ** 0.16 + 0.4275 * currentTemp * wSpeed ** 0.16;
-    } else {
-        windChill = "NA";
-    }
-    return windChill;
+function capitalize(string) {
+    return `${string.charAt(0).toUpperCase()}${string.slice(1)}`;
 }
 
 function displayResults(weatherData) {
-    const iconSrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = `${weatherData.weather[0].description}`;
-    icon.setAttribute('src', iconSrc);
-    icon.setAttribute('alt', desc);
-    capDesc.textContent = desc;
 
-    currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
+    temp1.innerHTML = `${weatherData.daily[0].temp.day.toFixed(0)}`;
 
-    wSpeed.innerHTML = `${weatherData.wind.speed}`;
+    const desc1 = capitalize(weatherData.daily[0].weather[0].description);
+    caption1.textContent = desc1;
+    icon1.src = `https://openweathermap.org/img/w/${weatherData.daily[0].weather[0].icon}.png`;
+    icon1.alt = desc1;
 
-    wChill.innerHTML = windChill();
+    humidity1.innerHTML = `${weatherData.daily[0].humidity}`;
+
+    temp2.innerHTML = `${weatherData.daily[1].temp.day.toFixed(0)}`;
+
+    const desc2 = capitalize(weatherData.daily[1].weather[0].description);
+    caption2.textContent = desc2;
+    icon2.src = `https://openweathermap.org/img/w/${weatherData.daily[1].weather[0].icon}.png`;
+    icon2.alt = desc2;
+
+    humidity2.innerHTML = `${weatherData.daily[1].humidity}`;
+
+    temp3.innerHTML = `${weatherData.daily[2].temp.day.toFixed(0)}`;
+
+    const desc3 = capitalize(weatherData.daily[2].weather[0].description);
+    caption3.textContent = desc3;
+    icon3.src = `https://openweathermap.org/img/w/${weatherData.daily[2].weather[0].icon}.png`;
+    icon3.alt = desc3;
+
+    humidity3.innerHTML = `${weatherData.daily[2].humidity}`;  
 }
 
 apiFetch();
