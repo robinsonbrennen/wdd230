@@ -56,56 +56,6 @@ fetch(url)
     console.error('Fetch Error -', err);  
   });
 
-// const url =
-//   "https://brotherblazzard.github.io/canvas-content/fruit.json";
-
-// let dropdownOne = document.querySelector("#fruitdrop1");
-// dropdownOne.length = 0;
-// let dropdownTwo = document.querySelector("#fruitdrop2");
-// dropdownOne.length = 0;
-// let dropdownThree = document.querySelector("#fruitdrop3");
-// dropdownOne.length = 0;
-
-// let defaultOptionOne = document.createElement("option");
-// defaultOptionOne.text = "Choose One Fruit";
-// let defaultOptionTwo = document.createElement("option");
-// defaultOptionTwo.text = "Choose Another Fruit";
-// let defaultOptionThree = document.createElement("option");
-// defaultOptionThree.text = "Choose the last Fruit";
-
-// dropdownOne.add(defaultOptionOne);
-// dropdownOne.selectedIndex = 0;
-// dropdownTwo.add(defaultOptionTwo);
-// dropdownTwo.selectedIndex = 0;
-// dropdownThree.add(defaultOptionThree);
-// dropdownThree.selectedIndex = 0;
-
-// fetch(url)
-//   .then(function(response){
-//     return response.json();
-//   })
-//   .then(function(jsonObject){
-//     let optionOne;
-//     let optionTwo;
-//     let optionThree;
-//     fruits = jsonObject;
-//     console.log(fruits);
-
-//     for (let i = 0; i < jsonObject.length; i++) {
-//       optionOne = document.createElement("option");
-//       optionOne.text = jsonObject[i].name;
-//       dropdownOne.add(optionOne);
-
-//       optionTwo = document.createElement("option");
-//       optionTwo.text = jsonObject[i].name;
-//       dropdownTwo.add(optionTwo);
-
-//       optionThree = document.createElement("option");
-//       optionThree.text = jsonObject[i].name;
-//       dropdownThree.add(optionThree);
-//     }
-//     return fruits;
-//   });
 
 fruitform = document.querySelector("form[name=fruitform]");
 fruitform.querySelector("button").addEventListener("click", function(){
