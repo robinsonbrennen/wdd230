@@ -201,5 +201,5 @@ freshForm.addEventListener("submit", function (e) {
       <h2>First Name: </h2>
       <p>${sugart.toFixed(2)}</p>`;
   
-    document.querySelector("#new_drink").innerHTML = result;
+    document.querySelector("#newdrink").innerHTML = result;
   }
