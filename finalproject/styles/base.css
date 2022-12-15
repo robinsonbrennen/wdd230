@@ -28,23 +28,13 @@ header, footer{
     
 }
 
-.toplogo img {
-    width: 170px;
-}
-
 .socialbox {
     display: flex;
     flex-direction: column;
     position: absolute;
 }
 
-.fbicon, .twittericon, .instaicon {
-    width: 40px;
-}
-
 /* Navigation */
-
-
 nav ul.hide {
     display: none;
 }
@@ -143,7 +133,6 @@ h1, h2, h3 {
 }
 
 .heroimg {
-    width: 100%;
     object-fit: cover;
     max-height: 300px;
 }
