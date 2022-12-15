@@ -37,14 +37,15 @@
             </ul>
         </nav>
     </div>
-    <main>
+    <main class="hmain">
         <section class="hero">
             <source srcset="images/strawberrysplash400" media="(max-width: 32.5em)">
             <source srcset="images/strawberrysplash800" media="(max-width: 60em)">
             <source srcset="images/strawberrysplash1200" media="(max-width: 120em)"> 
             <img class="heroimg" src="images/strawberrysplash.jpg" alt="Strawberries in a glass container">
-            <button class="fresh"><li><a href="fresh.html">Make your own fruit drink mix!</a></li></button>
+            <button class="fresh1"><li><a href="fresh.html">Order a custom mixed drink!</a></li></button>
         </section>
+        <hr>
         <section class="summaryinfo">
             <img src="images/santabarbara.jpg" alt="Santa Barbara City" style="width:100%;">
             <div class="centered">
@@ -54,6 +55,15 @@
                 <p><a href="about.html">Want to get to know more?</a></p>
             </div>
         </section>
+        <hr>
+        <section class="drinkbutton">
+            <img src="images/smoothie.jpg" alt="Smoothies on a plate." style="width:100%;">
+            <div class="centered1">
+                <h2>Create your very own drink/smoothie!</h2>
+                <p>Number of drinks you have made: <span id='showCounts'></span></p>
+            </div>
+        </section>
+        <hr>
         <section id='weather'>
             <h2>3-Day Forecast</h2>
             <div class='forecast'>
@@ -64,7 +74,7 @@
                     <figcaption id="condition1"></figcaption>
                 </figure>
                 <p>Temperature: <span id='temperature1'></span>&#8457;</p>
-                <p>Humidity: <span id='humidity1'></span></p>
+                <p>Humidity: <span id='humidity1'></span>%</p>
                 </div>
                 <div>
                 <h3>Tomorrow</h3>
@@ -73,7 +83,7 @@
                     <figcaption id="condition2"></figcaption>
                 </figure>
                 <p>Temperature: <span id='temperature2'></span>&#8457;</p>
-                <p>Humidity: <span id='humidity2'></span></p>
+                <p>Humidity: <span id='humidity2'></span>%</p>
                 </div>
                 <div>
                 <h3>The Day After Tomorrow</h3>
@@ -82,16 +92,26 @@
                     <figcaption id="condition3"></figcaption>
                 </figure>
                 <p>Temperature: <span id='temperature3'></span>&#8457;</p>
-                <p>Humidity: <span id='humidity3'></span></p>
+                <p>Humidity: <span id='humidity3'></span>%</p>
                 </div>
             </div>
         </section>
     </main>
     <footer>
-
+        <section class="contactInfo">
+            <h2>Bountiful Foods</h2>
+            <p>33 Parker Way Santa Barbara, CA 93101</p>
+            <p>(760) 000-0000</p>
+        </section>
+        <section class="classInfo">
+            <p></p>
+            <p>&copy; <span id="year">2022 </span>Bountiful Foods | Brennen Robinson | WDD 230 Project | Last Modified: <span id="last-visit"></span> days ago.</p>
+        </section>
     </footer>
     <script src="scripts/date.js"></script>
     <script src="scripts/navigation.js"></script>
     <script src="scripts/weather.js"></script>
+    <script src="scripts/lastupdate.js"></script>
+    <script src="scripts/drinknumber.js"></script>
 </body>
 </html>

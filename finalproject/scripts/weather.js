@@ -13,7 +13,7 @@ const conditions3 = document.querySelector('#conditions3');
 const condition3 = document.querySelector('#condition3');
 const humidity3 = document.querySelector('#humidity3');
 
-const url = 'https://api.openweathermap.org/data/3.0/onecall?lat=34.4208&lon=-119.6982&units=imperial&limit=3&appid=ab2701079d14f2054e74a081b52368fc';
+const url = 'https://api.openweathermap.org/data/3.0/onecall?lat=33.1581&lon=-117.3506&units=imperial&limit=3&appid=ab2701079d14f2054e74a081b52368fc';
 
 async function apiFetch() {
     try {

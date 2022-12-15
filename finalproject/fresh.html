@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brennen Robinson">
+    <meta name="description" content="The Bountiful Foods homepage aims to provide users a simple and pleasing page showing information about different ways they can interact with Bountiful Foods and other useful information.">
+    <title>Home page for Brennen Robinson's Bountiful Foods Website</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+</head>
+<body>
+    <header>
+        <picture class="toplogo">
+            <img src="images/bflogotrans.png" alt="Bountiful Foods Logo">
+        </picture>
+        <div class="socialbox">
+            <a href="http://facebook.com"><img class="fbicon" src="images/facebookicon.png" alt="Facebook Icon"></a>
+            <a href="http://twitter.com"><img class="twittericon" src="images/twittericon.png" alt="Twitter Icon"></a>
+            <a href="http://instagram.com"><img class="instaicon" src="images/instaicon.png" alt="Instagram Icon"></a>
+        </div>
+    </header>
+    <div class="navbox">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="fresh.html">Fresh</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main class="fmain">
+        <form name="fruitform" method='get' action="fresh.html">
+            <h2>Create your new favorite fruit drink!</h2>
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class='info'>First Name*<input type='text' name='firstname' id="fname" required></label>
+                <label class='info'>Email*<input type='email' name='email' id="email" placeholder='bountifulfruits@aol.com' required></label>
+                <label class='info'>Cell Number*<input type='tel' placeholder='760-000-0000' id="phone" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Choose Your Fruits</legend>
+                <section>
+                    <select class='fruitlist' id="fruitdrop1">
+                        <option></option>
+                    </select>
+                    <select class='fruitlist' id="fruitdrop2">
+                        <option></option>
+                    </select>
+                    <select class='fruitlist' id="fruitdrop3">
+                        <option></option>
+                    </select>
+                </section>
+            </fieldset>
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <textarea id="special"></textarea>
+            </fieldset>
+            <input type='submit' value='Mix it up!' id='createmix' onclick="countClicks()">
+        </form>
+        <div class="displaysmoothie">
+            <p id="new_drink"></p>
+        </div>
+    </main>
+    <footer>
+        <section class="contactInfo">
+            <h2>Bountiful Foods</h2>
+            <p>33 Parker Way Santa Barbara, CA 93101</p>
+            <p>(760) 000-0000</p>
+        </section>
+        <section class="classInfo">
+            <p></p>
+            <p>&copy; <span id="year">2022 </span>Bountiful Foods | Brennen Robinson | WDD 230 Project | Last Modified: <span id="last-visit"></span> days ago.</p>
+        </section>
+    </footer>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/lastupdate.js"></script>
+    <script src="scripts/fruitchoices.js"></script>
+    <script src="scripts/drinknumber.js"></script>
+</body>
+</html>
