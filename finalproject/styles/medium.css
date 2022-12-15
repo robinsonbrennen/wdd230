@@ -55,6 +55,11 @@
         flex-direction: row;
     }
 
+    .forecast div {
+        margin: 0em 1em;
+        margin-bottom: 1em;
+    }
+
     .summaryinfo img {
         opacity: 1;
     }
